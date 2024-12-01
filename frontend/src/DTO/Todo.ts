@@ -1,11 +1,7 @@
 export class Todo {
-    id: number;
-    title: string;
-    completed: boolean;
+    id: number = 0;
+    title: string = "";
+    completed: boolean = false;
 
-    constructor(id: number, title: string, completed: boolean) {
-        this.id = id;
-        this.title = title;
-        this.completed = completed;
-    }
+    editing: boolean = false;
 }

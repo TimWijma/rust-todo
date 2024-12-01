@@ -28,6 +28,9 @@ export class Fetch {
         return fetch(apiUrl, {
             method: "PUT",
             body: requestBody,
+            headers: {
+                "Content-Type": "application/json",
+            },
         }).then(Fetch.responseHandler);
     }
 
